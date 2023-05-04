@@ -1,3 +1,17 @@
 button {
     background-color: transparent;
 }
+
+#main {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-between; */
+    padding: 2rem;
+    gap: 2rem;
+    width: max(1024px, auto);
+    margin: 0 auto;
+}
+
+app-tabs {
+    flex: 1;
+}
