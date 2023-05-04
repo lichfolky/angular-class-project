@@ -11,6 +11,7 @@ import { VideoComponent } from './video/video.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
