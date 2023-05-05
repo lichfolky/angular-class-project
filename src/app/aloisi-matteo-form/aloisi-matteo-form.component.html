@@ -1,0 +1,42 @@
+<div class="form-container">
+  <div class="form-container--title">
+    <h1>Aiuta il progetto Animato</h1>
+  </div>
+  <div class="form-container--description">
+    <p>Scegli l'importo di un pagamento unico oppure abbonati a: </p>
+  </div>
+  <div class="form-container--select">
+    <mat-button-toggle-group name="PaymentType" aria-label="Font Style" [(ngModel)]="paymentType">
+      <mat-button-toggle value="unMese">Ogni mese</mat-button-toggle>
+      <mat-button-toggle value="unaVolta">Una volta</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <mat-button-toggle-group name="PaymentValue" aria-label="Font Style" [(ngModel)]="paymentValue">
+      <mat-button-toggle value="1">€1</mat-button-toggle>
+      <mat-button-toggle value="5">€5</mat-button-toggle>
+      <mat-button-toggle value="10">€10</mat-button-toggle>
+      <mat-button-toggle value="20">€20</mat-button-toggle>
+      <mat-button-toggle value="25">€25</mat-button-toggle>
+      <mat-button-toggle value="50">€50</mat-button-toggle>
+      <mat-button-toggle value="100">€100</mat-button-toggle>
+      <mat-button-toggle value="other">altre somme</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <mat-button-toggle-group name="PaymentMethod" aria-label="Font Style" [(ngModel)]="paymentMethod">
+      <mat-button-toggle value="bank">Bank</mat-button-toggle>
+      <mat-button-toggle value="paypal">Paypal</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+  <div class="form-container--input">
+    <mat-form-field class="example-full-width">
+      <mat-label>Indirizzo Email</mat-label>
+      <input matInput placeholder="Indirizzo Email" [(ngModel)]="email">
+    </mat-form-field>
+  </div>
+  <div class="form-container--button">
+    <section>
+      <div class="example-label"></div>
+        <button (click)="onClick()" mat-raised-button color="warn">Aiutare</button>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+.form-container {
+  background-color: #ECEBEC;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-container .form-container--title h1 {
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+.form-container .form-container--description p {
+  font-weight: 500;
+}
+.form-container .form-container--select {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: start;
+}
+
+.mat-button-toggle-checked {
+  background-color: #444345;
+  color: white;
+}
+
+.mat-button-toggle-group:nth-child(2) {
+  width: 50%;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
