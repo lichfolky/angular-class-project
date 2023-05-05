@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.tab-wrapper {
+    padding: 1.5rem 1rem 2rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+mat-button-toggle-group {
+    width: 100%;
+}
+
+mat-button-toggle-group>* {
+    flex: 1;
+}
+
+.multi-line {
+    background: #e0e0e0;
+    width: 100%;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.multi-line .mat-button-toggle-group {
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.multi-line .mat-button-toggle-group>* {
+    flex: 0 0 calc(25% - 1px);
+}
+
+.multi-line .mat-button-toggle+.mat-button-toggle {
+    border-left: 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.mail-input {
+    padding-top: 1rem;
+}

@@ -1,0 +1,44 @@
+<div class="tab-wrapper">
+
+    <form class="example-form">
+
+
+        <h1>Aiuta il nostro progetto!</h1>
+        <h3>Scegli un unico importo, o iscriviti ad aun abbonamento ricorrente:</h3>
+
+        <div class="toggle-wrapper">
+            <mat-button-toggle-group name="times">
+                <mat-button-toggle value="bold" checked>Ogni Mese</mat-button-toggle>
+                <mat-button-toggle value="bold">Una volta sola</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+
+        <div class="toggle-wrapper multi-line">
+            <mat-button-toggle-group name="amount">
+                <mat-button-toggle value="1" checked>1</mat-button-toggle>
+                <mat-button-toggle value="5" checked>5</mat-button-toggle>
+                <mat-button-toggle value="10" checked>10</mat-button-toggle>
+                <mat-button-toggle value="20" checked>20</mat-button-toggle>
+                <mat-button-toggle value="25" checked>25</mat-button-toggle>
+                <mat-button-toggle value="50" checked>50</mat-button-toggle>
+                <mat-button-toggle value="100" checked>100</mat-button-toggle>
+                <mat-button-toggle value="Other" checked>Altro</mat-button-toggle> </mat-button-toggle-group>
+        </div>
+
+
+        <div class="toggle-wrapper full-width">
+            <mat-button-toggle-group name="type">
+                <mat-button-toggle value="bold" checked>Bank</mat-button-toggle>
+                <mat-button-toggle value="bold">Paypal</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+
+        <mat-form-field class="mail-input full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. name@mail.com">
+        </mat-form-field>
+
+        <button class="call-action full-width" mat-raised-button color="accent">Aiutaci!</button>
+    </form>
+
+</div>

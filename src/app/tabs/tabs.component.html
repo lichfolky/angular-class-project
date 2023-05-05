@@ -1,5 +1,5 @@
-<mat-tab-group backgroundColor="primary">
-    <mat-tab label="Time">
+<mat-tab-group backgroundColor="primary" [selectedIndex]="1">
+    <mat-tab label="Timetable">
         <h3>Our webcam will only be live during the daytime (around 9am-4pm)
         </h3>
         <p>
@@ -18,6 +18,8 @@
         </ul>
 
     </mat-tab>
-    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Sostienici">
+        <app-pay-form></app-pay-form>
+    </mat-tab>
     <mat-tab label="Third">Content 3</mat-tab>
 </mat-tab-group>
