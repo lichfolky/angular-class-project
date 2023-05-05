@@ -1,0 +1,22 @@
+.ctaDon {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: rgb(0, 173, 0);
+}
+
+.abbContainer {
+  margin: auto;
+}
+
+.selDon {
+  padding: .5rem 2rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

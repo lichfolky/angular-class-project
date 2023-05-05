@@ -1,0 +1,31 @@
+<h2 class="pt-1">Make a <span class="ctaDon">Donation</span></h2>
+
+<div class="abbContainer">
+  <h3 class="">Choose your plane:</h3>
+  <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color"
+    [(ngModel)]="plane">
+    <mat-button-toggle value="mensile" class="selDon">Month</mat-button-toggle>
+    <mat-button-toggle value="annuale" class="selDon">Year</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <h3 class="pt-1">Choose the amount:</h3>
+  <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color"
+    [(ngModel)]="amountList">
+    <mat-button-toggle value="seleziona" class="selDon">Seleziona</mat-button-toggle>
+    <mat-button-toggle value="sei" class="selDon">6€</mat-button-toggle>
+    <mat-button-toggle value="nove" class="selDon">9€</mat-button-toggle>
+    <mat-button-toggle value="12" class="selDon">12€</mat-button-toggle>
+    <mat-button-toggle value="15" class="selDon">15€</mat-button-toggle>
+    <mat-button-toggle value="custom" class="selDon">other..</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <h3 class="pt-1">Choose your payment gateway</h3>
+  <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color"
+    [(ngModel)]="payMethod">
+    <mat-button-toggle value="bank" class="selDon">Bank</mat-button-toggle>
+    <mat-button-toggle value="paypal" class="selDon">Paypal</mat-button-toggle>
+  </mat-button-toggle-group>
+
+</div>
+
+<button mat-raised-button>Proceed to checkout</button>
