@@ -1,0 +1,50 @@
+<mat-slide-toggle
+  style="display: flex; justify-content: center"
+  *ngIf="!isChecked; else payform"
+  [(ngModel)]="isChecked"
+  >Vuoi sostenerci?</mat-slide-toggle
+>
+
+<ng-template #payform>
+  <div class="form-pay">
+    <div>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="Once">Una volta</mat-button-toggle>
+        <mat-button-toggle value="monthly">Ogni mese</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+
+    <!-- money -->
+    <section class="example-section">
+      <span class="example-list-section">
+        <p style="text-align: center">Quantità?</p>
+      </span>
+      <span class="example-list-section">
+        <ul>
+          <li *ngFor="let subtask of task.subtasks">
+            <mat-checkbox
+              [(ngModel)]="subtask.completed"
+              [color]="subtask.color"
+              (ngModelChange)="someComplete()"
+            >
+              {{ subtask.name }}
+            </mat-checkbox>
+          </li>
+        </ul>
+      </span>
+    </section>
+
+    <div>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="Bank">Bank</mat-button-toggle>
+        <mat-button-toggle value="Paypal">Paypal</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+    <div>
+      <button mat-fab extended color="accent">
+        <mat-icon>favorite</mat-icon>
+        Aiuta i cani
+      </button>
+    </div>
+  </div>
+</ng-template>
